@@ -887,6 +887,9 @@ class SubtitleOptimizationInterface(QWidget):
         if hasattr(self, 'subtitle_optimization_thread'):
             self.subtitle_optimization_thread.stop()
             self.start_button.setEnabled(True)
+            #改start
+            self.batch_translate_button.setEnabled(True)
+            #改end
             self.file_select_button.setEnabled(True)
             self.cancel_button.hide()
             self.progress_bar.setValue(0)
